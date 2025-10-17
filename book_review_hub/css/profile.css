@@ -1,0 +1,222 @@
+.backbtn {
+  background: #cccc33;
+  color: #717500;
+  border: 2px solid #717500;
+}
+.backbtn:hover {
+  background: #717500;
+  color: white;
+  border: 2px solid #717500;
+}
+  /* Profile Header */
+  .profile-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .profile-info p {
+    margin: 5px 0;
+  }
+  
+  /* Section Headers */
+  .profile-section {
+    margin-bottom: 30px;
+  }
+  .profile-section h3 {
+    margin-bottom: 15px;
+  }
+  /* Book Tile Styles (used in Your Ratings and Wishlist) */
+  .book-tile {
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  .book-tile a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  /* Book Cover: 7:10 aspect ratio, scaled to 70% of full size */
+  .book-cover {
+    width: 100%;
+    padding-top: calc((10 / 7) * 100% * 0.7);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  .book-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+    position: relative;
+    padding-right: 40px; /* space for wishlist heart */
+  }
+  .book-author {
+    font-size: 14px;
+    color: #777;
+    text-align: left;
+    position: relative;
+    padding-right: 120px; /* space for rate button/your rating */
+  }
+  /* Wishlist Heart Icon */
+  .wishlist-heart {
+    position: absolute;
+    top: -20px; /* Positioned above the book title */
+    right: 0;
+    font-size: 36px;
+    cursor: pointer;
+    /* PHP output: filled heart (&#9829;) or outlined (&#9825;), always in red */
+  }
+  /* Rate Button / Your Rating Display */
+  .rate-btn, .your-rating {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .rate-btn {
+    background: #cccc33;
+    color: #717500;
+    border: 1px solid #717500;
+  }
+  .rate-btn:hover {
+    background: #717500;
+    color: white;
+    border: 1px solid #717500;
+  }
+  .your-rating {
+    background: #d0e9c6;
+    color: #3c763d;
+    border: 1px solid #3c763d;
+  }
+  /* Row adjustments for tiles */
+  .tile-row .col-md-3 {
+    margin-bottom: 5px;
+  }
+  /* Reviews Section */
+  .review-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  .review-item h5 {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .review-item p {
+    margin-bottom: 5px;
+  }
+  .review-item small {
+    color: #777;
+  }
+  .review-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .edit-review-btn, .delete-review-btn, .details-btn {
+    margin-left: 5px;
+  }
+  /* Review Modal (for editing review) */
+  .review-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+  }
+  .review-modal-content {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    position: relative;
+  }
+  .review-modal-content .btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  .review-modal-content .form-group {
+    margin-bottom: 15px;
+  }
+  .form-control:focus {
+    border-color: #96961E;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(204,204,51,0.6);
+  }
+  /* Rate Modal (for rating update) */
+  #rateModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+  }
+  #rateModal > div {
+    background: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    margin: 100px auto;
+    border-radius: 8px;
+    position: relative;
+  }
+  #closeRateModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .sbm {
+    margin-left: auto;
+    background: #cccc33;
+    color: #717500;
+    border: 2px solid #717500;
+  }
+  .sbm:hover {
+    background: #717500;
+    color: white;
+    border: 2px solid #717500;
+  }
+  .sbm:active:hover:visited {
+    background: #717500;
+    color: white;
+    border: 2px solid #717500;
+  }
+  .extra-item {
+    display: none;
+  }
+  
+  .totalrating {
+    color: darkgray;
+  }

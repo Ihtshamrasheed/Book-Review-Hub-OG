@@ -1,0 +1,34 @@
+.genre-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .genre-modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 60%;
+    border-radius: 5px;
+    max-height: 70%;
+    overflow-y: auto;
+  }
+  
+  .genre-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .genre-checkboxes {
+    columns: 2;
+    column-gap: 30px;
+  }
+  

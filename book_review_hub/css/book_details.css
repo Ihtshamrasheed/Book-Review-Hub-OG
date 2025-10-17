@@ -1,0 +1,173 @@
+
+  /* Main layout */
+  .main-content {
+    margin-top: 20px;
+  }
+  /* Left Column */
+  .description-bar {
+    border: 2px solid black;
+    padding: 10px;
+    min-height: 150px;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  .description-label {
+    position: relative;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    text-align: center;
+  }
+  .review-controls {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .review-controls .total-reviews {
+    font-weight: bold;
+    margin-right: 15px;
+  }
+  .review-controls label {
+    margin-right: 10px;
+  }
+  .add-review-btn {
+    margin-left: auto;
+    background: #cccc33;
+    color: #717500;
+    border: 2px solid #717500;
+  }
+  .add-review-btn:hover {
+    background: #717500;
+    color: white;
+    border: 2px solid #717500;
+  }
+  /* Right Column */
+  .book-cover {
+    width: 120%;
+    /* Maintain 7:10 aspect ratio using padding-top technique */
+    padding-top: calc(10 / 7 * 48vh);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ddd;
+  }
+  .book-info {
+    margin-top: 10px;
+    text-align: left;
+  }
+  .book-title {
+    font-size: 20px;
+    font-weight: bold;
+    width: 125%;
+  }
+  .book-genres {
+    font-size: 14px;
+    color: #717500;
+    background: #cccc33;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 130%;
+    display: inline;
+    padding: 0 10px;
+  }
+
+  .book-author {
+    font-size: 20px;
+    color: #777;
+    text-align: left;
+    position: relative;
+  }
+  .book-rating {
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  /* Review Modal */
+  .review-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+  }
+  .review-modal-content {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    position: relative;
+  }
+  .review-modal-content .btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  .review-modal-content .form-group {
+    margin-bottom: 15px;
+  }
+  .form-control:focus {
+    border-color: #96961E;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(204,204,51,0.6);
+  }
+
+  .btn {
+    margin-left: auto;
+    background: #cccc33;
+    color: #717500;
+    border: 2px solid #717500;
+  }
+  .btn:hover {
+    background: #717500;
+    color: white;
+    border: 2px solid #717500;
+  }
+  .btn:active:hover:visited {
+    background: #717500;
+    color: white;
+    border: 2px solid #717500;
+  }
+
+  .dateofrev {
+    display: inline;
+  }
+
+
+  
+  /* Rate Button / Your Rating Display */
+  .rate-btn, .your-rating {
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+    font-size: 17px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .rate-btn {
+    background: #cccc33;
+    color: #717500;
+    border: 1px solid #717500;
+  }
+  .rate-btn:hover {
+    background: #717500;
+    color: white;
+    border: 1px solid #717500;
+  }
+  .your-rating {
+    background: #d0e9c6;
+    color: #3c763d;
+    border: 1px solid #3c763d;
+  }
